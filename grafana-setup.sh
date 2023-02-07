@@ -17,8 +17,8 @@ sudo cp node_exporter-1.0.1.linux-amd64/node_exporter /usr/local/bin/node_export
 rm -rf node_exporter-1.0.1.linux-amd64.tar.gz node_exporter-1.0.1.linux-amd64
 
 # setup the node-exporter dependencies
-sudo git clone -b installations https://github.com/cvamsikrishna11/devops-fully-automated.git /tmp/devops-fully-automated
-sudo cp /tmp/devops-fully-automated/prometheus-setup-dependencies/node-exporter.service /etc/systemd/system/node-exporter.service
+sudo git clone -b instalations https://github.com/emaatkcld/fully-auto-app-deploy.git /tmp/fully-auto-app-deploy
+sudo cp /tmp/fully-auto-app-deploy/prometheus-setup-dependencies/node-exporter.service /etc/systemd/system/node-exporter.service
 
 sudo systemctl daemon-reload
 sudo systemctl enable node-exporter
